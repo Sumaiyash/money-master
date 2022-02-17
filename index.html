@@ -16,56 +16,58 @@
         <h2 class=" mt-8 text-4xl font-bold text-center">Monthly Calculation </h2>
     </header>
     <main>
-        <div class=" grid lg:grid-cols-2 gap-6">
+        <div class=" grid grid-cols-2 sm:grid-cols-1 lg:grid-cols-2 gap-6">
             <!-- image -->
-            <div>
+            <div class=" sm:grid-cols-1 lg:grid-cols-2">
                 <img class="w-full h-11/12 m-8" src="images/money.png" alt="">
             </div>
             <!-- form  -->
-            <div class="w-11/12 h-11/12 m-8">
+            <div class=" sm:grid-cols-1 lg:grid-cols-2 w-11/12 h-11/12 m-8">
                 <form class="   bg-gray-100 border-stone-300  mt-0 mx-6 my-6 px-4 " action="">
                     <h3 class="text-xl font-bold text-center  mb-3">Income</h3>
 
                     <div>
-                        <div class="flex justify-center items-center gap-1">
-                            <label for=>Income:</label>
-                            <input id="income-input" class="  rounded-md my-6 bg-slate-300 p-1" type="text">
+                        <div class="flex justify-center items-center">
+                            <label class="mx-2" for=>Income:</label>
+                            <input id="income-input" class="  rounded-md  bg-slate-300 p-1" type="text">
+                        </div> <br>
 
-                        </div>
-
-                        <br>
                         <h3 class="text-xl font-bold text-center mb-3">Expenses</h3>
 
-                        <label for=""> Food:</label>
-                        <input id="food-input" class=" rounded-md my-2 bg-slate-300 mx-5 p-1" type="text"> <br>
-                        <label for=""> Rent:</label>
-                        <input id="rent-input" class=" rounded-md my-2 bg-slate-300 mx-5 p-1 " type="text"><br>
-                        <label for=""> Clothes:</label>
-                        <input id="cloth-input" class=" rounded-md my-2  bg-slate-300  mx-1 p-1 " type="text"> <br>
-                        <button id="calculate-button"
-                            class=" bg-blue-400 content-center rounded-md my-6 bg-slate-300  px-8 p-2">Calculate</button>
+                        <div class="flex justify-center items-center">
+                            <label class="mx-2" for=""> Food:</label>
+                            <input id="food-input" class=" rounded-md  bg-slate-300  p-1" type="text">
+                        </div> <br>
 
+                        <div class="flex justify-center items-center">
+                            <label class="mx-2" for=""> Rent:</label>
+                            <input id="rent-input" class=" rounded-md bg-slate-300  p-1 " type="text">
+                        </div><br>
+                        <div class="flex justify-center items-center">
+                            <label class="mx-2" for=""> Clothes:</label>
+                            <input id="cloth-input" class=" rounded-md   bg-slate-300   p-1 " type="text">
+                        </div> <br>
+                        <div class="flex justify-center items-center">
+                            <button id="calculate-button"
+                                class="  bg-blue-400 content-center rounded-md my-2 bg-slate-300  px-8 p-2">Calculate</button>
+                        </div>
 
                     </div>
 
-
-
-
-
-                    <p class="mt-4 text-2xl font-bold text-center">Total Expensive: <span id="total-result">0000</span>
+                    <p class="mt-2 text-2xl font-bold text-center">Total Expensive: <span id="total-result">00</span>
                     </p>
-                    <p class=" mt-2 text-2xl font-bold text-center">Balance: <span id="total-balance">0000</span></p>
+                    <p class=" mt-2 text-2xl font-bold text-center">Balance: <span id="total-balance">00</span></p>
                     <br>
-                    <label for=""> save</label>
+                    <label class="mx-2" for=""> save</label>
                     <input id="save-input" class=" rounded-md   bg-slate-300  p-2 " type="text"> <span class="mx-8">
                         %</span>
                     <button id="savings-button"
-                        class=" bg-blue-400 content-center rounded-md my-6 bg-slate-300  px-8 p-2">save</button>
+                        class=" bg-blue-400 content-center rounded-md my-3 bg-slate-300  px-8 p-2">save</button>
                     <br>
-                    <p class=" mt-2 text-2xl font-bold text-center">Saving Amount: <span id="saving-text"> 0000</span>
+                    <p class=" mt-1 text-2xl font-bold text-center">Saving Amount: <span id="saving-text"> 00</span>
                     </p>
-                    <p class="  py-4 mt-2 text-2xl font-bold text-center"> Remaining Balance: <span
-                            id="remaining-balance">0000</span> </p>
+                    <p class="   text-2xl font-bold text-center"> Remaining Balance: <span
+                            id="remaining-balance">00</span> </p>
                 </form>
 
             </div>
