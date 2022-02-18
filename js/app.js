@@ -1,13 +1,13 @@
 // Input field string to number convert
-function ExpensesValueConvert(idName) {
-    const input = document.getElementById(idName).value;
+function ExpensesValueConvert(number) {
+    const input = document.getElementById(number).value;
     const amount = parseFloat(input);
     //clear input field
 
     return amount;
 }
 
-document.getElementById('calculate-button').addEventListener('click', function () {
+document.getElementById('calculate-button').addEventListener("click", function () {
 
     const foodExpenses = ExpensesValueConvert('food-input');
     const rentExpenses = ExpensesValueConvert('rent-input');
@@ -29,10 +29,9 @@ document.getElementById('calculate-button').addEventListener('click', function (
     const previousBalanceTotal = parseFloat(balanceTotalText);
 
     expensesTotal.innerText = previousExpensesTotal + totalAmount;
-    let NewBalance = incomeInput - totalAmount;
-    balanceTotal.innerText = previousBalanceTotal + NewBalance;
+    let newBalance = incomeInput - totalAmount;
+    balanceTotal.innerText = previousBalanceTotal + newBalance;
 })
-
 document.getElementById('savings-button').addEventListener('click', function () {
 
     const incomeInput = document.getElementById('income-input').value;
